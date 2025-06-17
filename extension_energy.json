@@ -2,7 +2,7 @@
   "type": "CityJSONExtension",
   "name": "3DEnergyBuilding",
   "description": "Extension for 3D energy-related attributes of buildings at the urban scale",
-  "url": "https://yourdomain.org/extensions/3DEnergyBuilding.ext.json",
+  "url": "https://raw.githubusercontent.com/ilaydaeser/3Dext/main/extension_energy.json",
   "version": "1.1",
   "versionCityJSON": "2.0",
   "extraCityObjects": {
