@@ -55,13 +55,13 @@
                                     "type": "string"
                                 },
                                 "thermalMassCapacity": {
-                                    "type": "string"
+                                    "type": "number"
                                 },
                                 "ventilationFlowRate": {
-                                    "type": "string"
+                                    "type": "number"
                                 },
                                 "heatingSystemEfficiency": {
-                                    "type": "string"
+                                    "type": "number"
                                 },
                                 "hvacType": {
                                     "type": "string"
