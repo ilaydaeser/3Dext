@@ -1,0 +1,64 @@
+{
+  "type": "CityJSONExtension",
+  "name": "3DEnergyBuilding",
+  "description": "Extension for 3D energy-related attributes of buildings at the urban scale",
+  "url": "https://yourdomain.org/extensions/3DEnergyBuilding.ext.json",
+  "version": "1.1",
+  "versionCityJSON": "2.0",
+  "extraCityObjects": {
+    "+EnergyBuilding": {
+      "allOf": [
+        {
+          "$ref": "cityobjects.schema.json#/_AbstractBuilding"
+        },
+        {
+          "properties": {
+            "type": {
+              "enum": ["+EnergyBuilding"]
+            },
+            "attributes": {
+              "type": "object",
+              "properties": {
+                "buildingType": { "type": "string" },              
+                "buildingAge": { "type": "integer" },
+                "numberOfFloors": { "type": "integer" },
+                "totalGroundArea": { "type": "number" },
+                "height": { "type": "number" },
+                "facadeOrientation": { "type": "string" },
+                "windowToWallRatio": { "type": "number" },
+                "solarPanels": { "type": "boolean" },
+                "heatLossCoefficient": { "type": "number" },
+                "thermalBridges": { "type": "string" },
+                "ventilationType": { "type": "string" },
+                "thermalMassCapacity": { "type": "string" },
+                "ventilationFlowRate": { "type": "string" },
+                "heatingSystemEfficiency": { "type": "string" },
+                "hvacType": { "type": "string" },
+                "solarRadiation": { "type": "number" },
+                "windConditions": { "type": "string" },
+                "humidity": { "type": "number" },
+                "operatingTemperature": { "type": "number" },
+                "electricityConsumption": { "type": "number" },
+                "numberOfOccupants": { "type": "integer" },
+                "internalGains": { "type": "number" },
+                "heatingEnergyDemand": { "type": "number" },
+                "deltaU": { "type": "number" },
+                "airTightness": { "type": "number" }
+              },
+              "required": [
+                "buildingType",
+                "buildingAge",
+                "numberOfFloors",
+                "height",
+                "solarPanels",
+                "electricityConsumption",
+                "heatingEnergyDemand"
+              ]
+            }
+          },
+          "required": ["type", "geometry"]
+        }
+      ]
+    }
+  }
+}
