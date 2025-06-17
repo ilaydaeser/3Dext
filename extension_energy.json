@@ -5,113 +5,93 @@
     "url": "https://raw.githubusercontent.com/ilaydaeser/3Dext/main/extension_energy.json",
     "version": "1.1",
     "versionCityJSON": "2.0",
-    "extraCityObjects": {
+    "extraAttributes": {
         "Building": {
-            "allOf": [
-                {
-                    "$ref": "cityobjects.schema.json#/_AbstractBuilding"
+            "type": "object",
+            "properties": {
+                "buildingType": {
+                    "type": "string"
                 },
-                {
-                    "properties": {
-                        "type": {
-                            "enum": [
-                                "Building"
-                            ]
-                        },
-                        "attributes": {
-                            "type": "object",
-                            "properties": {
-                                "buildingType": {
-                                    "type": "string"
-                                },
-                                "buildingAge": {
-                                    "type": "integer"
-                                },
-                                "numberOfFloors": {
-                                    "type": "integer"
-                                },
-                                "totalGroundArea": {
-                                    "type": "number"
-                                },
-                                "height": {
-                                    "type": "number"
-                                },
-                                "facadeOrientation": {
-                                    "type": "string"
-                                },
-                                "windowToWallRatio": {
-                                    "type": "number"
-                                },
-                                "solarPanels": {
-                                    "type": "boolean"
-                                },
-                                "heatLossCoefficient": {
-                                    "type": "number"
-                                },
-                                "thermalBridges": {
-                                    "type": "boolean"
-                                },
-                                "ventilationType": {
-                                    "type": "string"
-                                },
-                                "thermalMassCapacity": {
-                                    "type": "number"
-                                },
-                                "ventilationFlowRate": {
-                                    "type": "number"
-                                },
-                                "heatingSystemEfficiency": {
-                                    "type": "number"
-                                },
-                                "hvacType": {
-                                    "type": "string"
-                                },
-                                "solarRadiation": {
-                                    "type": "number"
-                                },
-                                "windConditions": {
-                                    "type": "string"
-                                },
-                                "humidity": {
-                                    "type": "number"
-                                },
-                                "operatingTemperature": {
-                                    "type": "number"
-                                },
-                                "electricityConsumption": {
-                                    "type": "number"
-                                },
-                                "numberOfOccupants": {
-                                    "type": "integer"
-                                },
-                                "internalGains": {
-                                    "type": "number"
-                                },
-                                "heatingEnergyDemand": {
-                                    "type": "number"
-                                },
-                                "deltaU": {
-                                    "type": "number"
-                                },
-                                "airTightness": {
-                                    "type": "number"
-                                }
-                            },
-                            "required": [
-                                "buildingType",
-                                "buildingAge",
-                                "numberOfFloors",
-                                "height",
-                                "electricityConsumption",
-                                "heatingEnergyDemand"
-                            ]
-                        }
-                    },
-                    "required": [
-                        "type",
-                        "geometry"
-                    ]
+                "buildingAge": {
+                    "type": "integer"
+                },
+                "numberOfFloors": {
+                    "type": "integer"
+                },
+                "totalGroundArea": {
+                    "type": "number"
+                },
+                "height": {
+                    "type": "number"
+                },
+                "facadeOrientation": {
+                    "type": "string"
+                },
+                "windowToWallRatio": {
+                    "type": "number"
+                },
+                "solarPanels": {
+                    "type": "boolean"
+                },
+                "heatLossCoefficient": {
+                    "type": "number"
+                },
+                "thermalBridges": {
+                    "type": "boolean"
+                },
+                "ventilationType": {
+                    "type": "string"
+                },
+                "thermalMassCapacity": {
+                    "type": "number"
+                },
+                "ventilationFlowRate": {
+                    "type": "number"
+                },
+                "heatingSystemEfficiency": {
+                    "type": "number"
+                },
+                "hvacType": {
+                    "type": "string"
+                },
+                "solarRadiation": {
+                    "type": "number"
+                },
+                "windConditions": {
+                    "type": "string"
+                },
+                "humidity": {
+                    "type": "number"
+                },
+                "operatingTemperature": {
+                    "type": "number"
+                },
+                "electricityConsumption": {
+                    "type": "number"
+                },
+                "numberOfOccupants": {
+                    "type": "integer"
+                },
+                "internalGains": {
+                    "type": "number"
+                },
+                "heatingEnergyDemand": {
+                    "type": "number"
+                },
+                "deltaU": {
+                    "type": "number"
+                },
+                "airTightness": {
+                    "type": "number"
                 }
+            },
+            "required": [
+                "buildingType",
+                "buildingAge",
+                "numberOfFloors",
+                "height",
+                "electricityConsumption",
+                "heatingEnergyDemand"
             ]
         }
     }
